@@ -1,0 +1,13 @@
+{
+  "name": "ekwem-legal-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Legal Portfolio for Ekwem Ugomma",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "bootstrap-icons": "^1.13.1"
+  }
+}
