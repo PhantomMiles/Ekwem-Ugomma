@@ -1,0 +1,42 @@
+/* ========================================
+   VARIABLES & RESET
+   ======================================== */
+
+:root {
+    --primary: #DAD6D1;      /* Pathway */
+    --secondary: #C0B3A4;    /* Balanced Beige */
+    --accent: #9A8E7F;       /* Matte Olive */
+    --dark: #726252;         /* Reed Mace Brown */
+    --darker: #43392E;       /* Bear Brown */
+    --darkest: #10120E;      /* Sinister */
+    --bg-primary: #0F0F0F;
+    --bg-secondary: #1A1A1A;
+    --text-light: #E8E8E8;
+    --text-muted: #A8A8A8;
+    --border-color: #2A2A2A;
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
