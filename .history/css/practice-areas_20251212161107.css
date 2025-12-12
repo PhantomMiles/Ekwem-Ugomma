@@ -1,0 +1,31 @@
+/* Practice Areas page specific styles */
+
+.practice-areas-detailed { padding: 8rem 0; background: var(--bg-primary); }
+.intro-text { text-align: center; font-size: 1.15rem; color: var(--text-muted); margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+
+.practice-areas-expanded { display: grid; gap: 3rem; }
+.practice-areas-detailed .practice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+
+.practice-area-card { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 15px; text-align: center; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.practice-area-card:hover { transform: translateY(-10px); border-color: var(--primary); background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4); }
+.practice-area-card .practice-icon { font-size: 3rem; margin-bottom: 1.5rem; color: var(--primary); }
+.practice-area-card h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600; }
+.practice-area-card p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1rem; }
+.practice-list { list-style: none; text-align: left; }
+.practice-list li { color: var(--text-muted); margin-bottom: 0.8rem; padding-left: 1.75rem; position: relative; line-height: 1.6; }
+.practice-list li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+
+.practice-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.practice-item { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 15px; text-align: center; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.practice-item:hover { transform: translateY(-8px); border-color: var(--primary); background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); box-shadow: 0 15px 40px rgba(218, 214, 209, 0.15); }
+
+@media (max-width: 768px) {
+    .practice-areas-detailed { padding: 5rem 0; }
+    .practice-areas-detailed .practice-grid { grid-template-columns: 1fr; }
+    .practice-items { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .practice-areas-detailed .practice-grid { grid-template-columns: 1fr; }
+    .practice-items { grid-template-columns: 1fr; }
+}

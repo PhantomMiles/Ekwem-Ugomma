@@ -1,0 +1,35 @@
+/* Services page specific styles */
+
+.services-page .services-intro { text-align: center; margin-bottom: 4rem; }
+.services-page .services-intro p { font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto; line-height: 1.8; }
+
+.service-card { padding: 2.5rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.service-card h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 1rem; font-weight: 600; }
+.service-card p { color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; }
+.service-card:hover h3 { color: var(--secondary); }
+
+.service-details { list-style: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); }
+.service-details li { color: var(--text-muted); margin-bottom: 0.9rem; padding-left: 1.75rem; position: relative; line-height: 1.6; font-size: 0.95rem; }
+.service-details li::before { content: '▸'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+
+.service-process { padding: 8rem 0; background: var(--bg-secondary); }
+.process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+.process-step { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 15px; text-align: center; animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transition: var(--transition); }
+.process-step:nth-child(1) { animation-delay: 0.1s; }
+.process-step:nth-child(2) { animation-delay: 0.2s; }
+.process-step:nth-child(3) { animation-delay: 0.3s; }
+.process-step:nth-child(4) { animation-delay: 0.4s; }
+.process-step:hover { background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); border-color: var(--primary); transform: translateY(-8px); }
+
+.step-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: var(--darkest); border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; box-shadow: 0 8px 25px rgba(218, 214, 209, 0.2); }
+.process-step h3 { color: var(--text-light); margin-bottom: 1rem; font-weight: 600; font-size: 1.1rem; }
+.process-step p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+@media (max-width: 768px) {
+    .services-page { padding: 5rem 0; }
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .process-steps { grid-template-columns: 1fr; }
+}

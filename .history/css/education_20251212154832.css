@@ -1,0 +1,15 @@
+/* Education page specific styles */
+
+.education { padding: 6rem 0; background: var(--bg-secondary); }
+.education-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; }
+.education-item { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 15px; text-align: center; animation: fadeInUp 0.8s ease-out; }
+.education-item:hover { transform: translateY(-8px); background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); border-color: var(--primary); }
+.education-icon { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+.education-item h3 { color: var(--text-light); margin-bottom: 1rem; font-size: 1.2rem; }
+.education-item p { color: var(--text-muted); line-height: 1.7; }
+
+.skills-section { padding: 6rem 0; background: var(--bg-primary); }
+.skills-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; }
+.skills-category { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 15px; animation: fadeInUp 0.8s ease-out; }
+
+@media (max-width: 768px) { .education-content { grid-template-columns: 1fr; } .skills-content { grid-template-columns: 1fr; } }

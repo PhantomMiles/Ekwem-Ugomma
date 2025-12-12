@@ -1,0 +1,52 @@
+/* Education page specific styles */
+
+.education { padding: 8rem 0; background: var(--bg-secondary); }
+.education-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
+.education-item { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 3rem 2.5rem; border-radius: 15px; text-align: center; animation: fadeInUp 0.8s ease-out; transition: var(--transition); }
+.education-item:hover { transform: translateY(-10px); background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); border-color: var(--primary); }
+.education-icon { font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+.education-item h3 { color: var(--text-light); margin-bottom: 0.75rem; font-size: 1.3rem; font-weight: 600; }
+.education-item p { color: var(--text-muted); line-height: 1.8; font-size: 0.95rem; }
+
+.education-item-detailed { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 3rem; border-radius: 15px; margin-bottom: 2.5rem; animation: fadeInUp 0.8s ease-out; transition: var(--transition); }
+.education-item-detailed:hover { background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); border-color: var(--primary); transform: translateY(-5px); }
+.education-item-header { display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem; }
+.education-icon-large { font-size: 3rem; color: var(--primary); flex-shrink: 0; }
+.education-item-text h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 600; }
+.institution { color: var(--text-muted); font-size: 0.95rem; }
+.education-details { text-align: left; }
+.education-details p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; font-weight: 500; }
+.education-list { list-style: none; }
+.education-list li { color: var(--text-muted); margin-bottom: 0.8rem; padding-left: 1.75rem; position: relative; line-height: 1.6; }
+.education-list li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+
+.skills-section { padding: 8rem 0; background: var(--bg-primary); }
+.skills-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; }
+.skills-category { background: linear-gradient(135deg, rgba(192, 179, 154, 0.08) 0%, rgba(154, 142, 127, 0.05) 100%); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 15px; animation: fadeInUp 0.8s ease-out; transition: var(--transition); }
+.skills-category:hover { background: linear-gradient(135deg, rgba(218, 214, 209, 0.12) 0%, rgba(154, 142, 127, 0.08) 100%); border-color: var(--primary); transform: translateY(-5px); }
+.skills-category h3 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.75rem; font-weight: 600; }
+.skills-category i { font-size: 1.3rem; }
+.skills-list { list-style: none; }
+.skills-list li { color: var(--text-muted); margin-bottom: 1rem; padding-left: 1.75rem; position: relative; line-height: 1.6; font-size: 0.95rem; }
+.skills-list li i { position: absolute; left: 0; color: var(--primary); font-size: 0.9rem; font-weight: 700; }
+
+.competencies { padding: 0; }
+.competencies h3 { color: var(--primary); font-size: 1.15rem; margin-top: 2rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.75rem; }
+
+.professional-development { padding: 8rem 0; background: var(--bg-secondary); }
+
+.memberships { padding: 8rem 0; background: var(--bg-primary); }
+
+@media (max-width: 768px) {
+    .education { padding: 5rem 0; }
+    .education-content { grid-template-columns: 1fr; }
+    .skills-section { padding: 5rem 0; }
+    .skills-content { grid-template-columns: 1fr; }
+    .education-item-header { flex-direction: column; align-items: center; }
+    .education-details { text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .education-item h3 { font-size: 1.1rem; }
+    .skills-category h3 { font-size: 1.1rem; }
+}

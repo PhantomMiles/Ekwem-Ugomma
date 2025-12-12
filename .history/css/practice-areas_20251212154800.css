@@ -1,0 +1,16 @@
+/* Practice Areas page specific styles */
+
+.practice-areas-detailed { padding: 6rem 0; background: var(--bg-primary); }
+.intro-text { text-align: center; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+.practice-areas-expanded { display: grid; gap: 2rem; }
+
+.practice-areas-detailed .practice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+
+.practice-areas-detailed .practice-item { background: rgba(218, 214, 209, 0.05); border: 1px solid var(--border-color); padding: 2rem; border-radius: 15px; text-align: center; transition: all 0.3s ease; }
+
+.practice-areas-detailed .practice-item:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: 0 15px 40px rgba(218, 214, 209, 0.1); }
+
+.practice-areas-detailed .practice-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+@media (max-width: 768px) { .practice-areas-detailed .practice-grid { grid-template-columns: 1fr; } }
